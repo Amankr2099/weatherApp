@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body >
+    <header>
+      <h1>Weather App</h1>
+    </header>
+
+    <div class="weather-container">
+      <div class="weather-status">
+        <div class="current-weather">
+          <h2 id="city-name">City...</h2>
+          <img
+            id="temp-img"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="Weather Icon"
+          />
+          <p>Temperature:<span id="temperature">...</span></p>
+          <p>Condition: <span id="condition">....</span></p>
+        </div>
+
+        <div class="forecast">
+          <div class="forecast-day">
+            <h3><span id="max-temp">...</span></h3>
+            <p>Max</p>
+          </div>
+
+          <div class="forecast-day">
+            <h3><span id="min-temp">...</span></h3>
+            <p>Min</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather-input">
+        <form action="">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Type City Name"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-angles-right" id="check-weather" required ></i>
+        </form>
+        <p>Use current location</p>
+        <i class="fa-solid fa-location-dot" id="give-location"></i>
+      </div>
+
+      <div class="error-block">
+        <h3>Sorry,....Unable to search this location</h3>
+      </div>
+    </div>
+    <script src="/function.js"></script>
+  </body>
+</html>
